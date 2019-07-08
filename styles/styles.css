@@ -1,8 +1,31 @@
 h1 {
-  color: #666666;
-  font-size: 48px;
-  font-family: Verdana, Arial, sans-serif;
+  color: #d65076;
+  font-size: 6rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: lighter;
+}
+
+h1 a:link {
+  color: #d65076;
+  text-decoration: none;
+}
+
+h1 a:visited {
+  color: #d65076;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  background-color: white;
+
+  color: #666666;
+  text-decoration: none;
+}
+
+.subtitle {
+  color: #AAAAAA;
+  font-size: 2rem;
+  font-family: 'Yrsa', serif;
 }
 
 h2 {
@@ -24,7 +47,7 @@ nav {
 }
 
 p {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Yrsa', serif;
   font-size: 18px;
   color: #444444;
 }
@@ -40,8 +63,6 @@ a:visited {
 a:hover {
   color: white;
   background-color: #d65076;
-  padding: .5rem;
-
 }
 
 img {
