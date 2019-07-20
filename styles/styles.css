@@ -1,5 +1,5 @@
 header {
-  backgroud-color: white;
+  background-color: white;
   margin-bottom: 4rem;
 }
 h1 {
@@ -93,6 +93,8 @@ a:hover {
 
 img {
   border: solid 1px #ffffff;
+  float: right;
+  margin-left: 1rem;
 }
 
 img:hover {
