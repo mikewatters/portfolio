@@ -1,3 +1,10 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   background-color: white;
   margin-bottom: 4rem;
@@ -12,6 +19,7 @@ h1 {
 
 article {
   margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 h2 {
@@ -64,6 +72,31 @@ nav a:hover {
   word-spacing: 2rem;
 }
 
+nav img {
+  border: solid 1px #ffffff;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  float: right;
+  height: 280px;
+  width: 200px;
+
+-webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+
+nav img:hover {
+  -webkit-transform: rotate(5deg);
+     -moz-transform: rotate(5deg);
+       -o-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+
+}
+
 .logo {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 3rem;
@@ -79,6 +112,7 @@ body {
 
 a:link {
   color: #d65076;
+  text-decoration: none;
 }
 
 a:visited {
@@ -91,18 +125,10 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  border: solid 1px #ffffff;
-  float: right;
-  margin-left: 1rem;
-}
-
-img:hover {
-  border: solid 1px #444444;
-}
-
-img a:hover {
-  border: solid 1px #444444;
+article img {
+  border: 8px solid white;
+  margin: 2rem 1rem 1rem;
+  width: 16rem;
 }
 
 .flex-container {
@@ -112,30 +138,35 @@ img a:hover {
 }
 
 .flex-box {
-  width: 400px;
-  background-color: #CCCCCC;
+  width: 20rem;
+  height: 30rem;
   padding: 0rem 1rem 1rem;
   margin: .5rem;
+  transition: background-color 1.5s ease-out;
 }
 
-#champagne-pink-box {
+.flex-box:nth-child(6n+1) {
   background-color: #f3dcd4;
 }
 
-#dusty-pink-box {
+.flex-box:nth-child(6n+2) {
   background-color: #ecc9c7;
 }
 
-#grainsboro-box {
+.flex-box:nth-child(6n+3) {
   background-color: #d9e3da;
 }
 
-#warm-gray-box {
+.flex-box:nth-child(6n+4) {
   background-color: #d1cfc0;
 }
 
-#tan-box {
+.flex-box:nth-child(6n+5) {
   background-color: #c2c2b4;
+}
+
+.flex-box:nth-child(6n+6) {
+  background-color: #CCCCCC;
 }
 
 footer {
