@@ -393,13 +393,17 @@ nav {
       text-transform: none;
     }
 
-
-  article {
+article {
   margin: 0rem 1rem 0rem;
   }
 
 h1 {
+  font-size: 200%;
     margin: 2rem 1rem 0rem;
+  }
+
+  h2 {
+    font-size: 200%;
   }
 
 body {
