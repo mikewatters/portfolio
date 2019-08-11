@@ -96,6 +96,7 @@ nav img:hover {
   font-size: 5rem;
   text-transform: none;
   word-spacing: 0;
+  letter-spacing: -1px;
 }
 
 body {
@@ -366,8 +367,8 @@ nav img {
 nav {
     font-size: 4rem;
     text-align: center;
-    padding: 3.5rem 2rem .5rem 2rem;
-    line-height: 3rem;
+    padding: 4rem 2rem 1rem 2rem;
+    line-height: 0;
     letter-spacing: 2px;
   }
 
@@ -386,6 +387,13 @@ nav {
     text-decoration: none;
   }
 
+.logo {
+      font-size: 8rem;
+      line-height: 8rem;
+      text-transform: none;
+    }
+
+
   article {
   margin: 0rem 1rem 0rem;
   }
@@ -402,11 +410,7 @@ h3 {
   font-size: 175%;
 }
 
-.logo {
-    font-size: 8rem;
-    line-height: 8rem;
-    text-transform: none;
-  }
+
 
 .flex-box {
     width: 100%;
