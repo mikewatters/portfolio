@@ -386,6 +386,10 @@ body {
   font-size: 250%;
 }
 
+h3 {
+  font-size: 200%;
+}
+
 .logo {
     font-size: 6rem;
     text-transform: none;
