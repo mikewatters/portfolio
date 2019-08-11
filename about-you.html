@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>About You</title>
+    <script src="https://kit.fontawesome.com/4b01e0c907.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300%7cLiterata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <nav>
+      <a href="http://mikewatters.com" target="_blank"><img src="http://mikewatters.com/wp-content/uploads/2019/03/Mike-headshot.jpg" alt="Mike Watters headshot."></a>
+      <a href="index.html"><span class="logo">M!ke Watters</span></a>
+      <p><a href="about-mike.html">About Me</a> / <a href="about-you.html">About You</a></p>
+    </nav>
+    <header>
+      <h1>Tell me some things about yourself.</h1>
+    </header>
+    <article>
+      <h2>Fill out the form below.</h2>
+      <form method="get">
+        <label>What&rsquo;s your name?
+          <input type="text" name="friendName">
+        </label>
+        <label>What&rsquo;s your favorite day of the week?
+          <input type="text" name="friendFave">
+        </label>
+        <label for="city">Where ya from?</label>
+          <input id="city" type="text" name="friendCity">
+        <label>Rate this website:
+          <input type="number" name="friendRating">
+        </label>
+        <label>Tell me how you feel.
+          <textarea name="friendFeeling" rows="4" cols="50">Type here.</textarea>
+        </label>
+        <fieldset class="checkbox">
+          <legend>Pick some hobbies:</legend>
+          <label><input type="checkbox" name="hobby" value="coding">Coding<span class=checkmark></span></label>
+          <label><input type="checkbox" name="hobby" value="writing">Writing<span class=checkmark></span></label>
+          <label><input type="checkbox" name="hobby" value="art">Art<span class=checkmark></span></label>
+          <label><input type="checkbox" name="hobby" value="exercise">Exercise<span class=checkmark></span></label>
+        </fieldset>
+        <fieldset class="radio">
+          <legend>Have you been to Mountlake Terrace?</legend>
+          <label><input type="radio" name="place" value="yes">Yes<span class=rodeo></span></label>
+          <label><input type="radio" name="place" value="no">No<span class=rodeo></span></label>
+        </fieldset>
+        <label>Pick one.?</label>
+        <select name="hours">
+          <option value="">Choose</option>
+          <option value="cake">Cake</option>
+          <option value="pie">Pie</option>
+          <option value="ice cream">Ice Cream</option>
+        </select>
+        <label>What is the secret password?
+          <input type="password" name="accountPW"></label>
+        <input type="submit" value="Submit">
+      </form>
+  </article>
+  <footer>
+    <p class="footer-text">&copy; 2019 Mike Watters
+    &nbsp;&nbsp;<a href="https://github.com/mikewatters" target="_blank" rel="noopener"><i class="fab fa-git"></i></a>
+    &nbsp;&nbsp;<a href="https://facebook.com/mxmikewatters" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+    &nbsp;&nbsp;<a href="https://twitter.com/mxmikewatters" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+    &nbsp;<a href="https://instagram.com/mxmikewatters" target="_blank" rel="noopener">&nbsp;&nbsp;<i class="fab fa-instagram"></i></a>
+    &nbsp;&nbsp;&nbsp;<a href="https://linkedin.com/mxmikewatters" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></p>
+  </footer>
+</body>
+</html>

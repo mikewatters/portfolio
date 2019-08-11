@@ -12,7 +12,7 @@ header {
 
 h1 {
   color: #666666;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'Literata', serif;
   margin: 2rem 4rem 0rem;
   padding: 0rem;
@@ -25,13 +25,13 @@ article {
 
 h2 {
   color: #888888;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Literata', serif;
 }
 
 h3 {
   color: #444444;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: 'Literata', serif;
   font-weight: 900;
 }
@@ -42,7 +42,7 @@ h3 i {
 
 nav {
   font-family: 'Literata', serif;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: white;
   text-decoration: none;
@@ -73,7 +73,7 @@ nav a:hover {
 nav img {
   border: solid 1px #ffffff;
   margin-left: 1rem;
-  margin-top: -7rem;
+  margin-top: 1rem;
   overflow: hidden;
   float: right;
   height: 280px;
@@ -96,7 +96,7 @@ nav img:hover {
 
 .logo {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: none;
   word-spacing: 0;
 }
@@ -130,7 +130,7 @@ a:hover {
 }
 
 .flex-box {
-  width: 100%;
+  width: 30%;
   min-height: 30rem;
   padding: 0rem 2rem 2rem;
   margin: .5rem;
@@ -192,11 +192,167 @@ footer {
   background-color: #666666;
 }
 
-@media screen and (min-width: 1280px) {
-  .flex-box {
-    width: 30%;
-  }
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0rem 1rem;
+  padding: 1rem;
+}
 
+input {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #dddddd;
+}
+
+input[type="submit"] {
+  width: 33%;
+  background-color: #d65076;
+  color: #ffffff;
+}
+
+input:focus {
+  background-color: #d1cfc0;
+  outline: none;
+}
+
+textarea {
+  color: #dddddd;
+  border: 1px solid #dddddd;
+    border-radius: 20px;
+    width: 100%;
+}
+
+textarea:focus {
+  color: #444;
+  background-color: #d1cfc0;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background-color: #d1cfc0;
+}
+
+.checkbox label:hover input ~ .checkmark {
+  background-color: #d65076;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #d65076;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.radio input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rodeo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #d1cfc0;
+  border-radius: 50%;
+}
+
+.radio:hover input ~ .rodeo {
+  background-color: #444;
+}
+
+.radio input:checked ~ .rodeo {
+  background-color: #d65076;
+}
+
+.rodeo:after {
+  content: "";
+  position: relative;
+  display: block;
+}
+
+.radio input:checked ~ .rodeo:after {
+  display: block;
+}
+
+.radio .rodeo:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media screen and (min-width: 1280px) {
 }
 
 @media screen and (max-width: 1024px) {
@@ -226,14 +382,18 @@ nav {
     text-decoration: none;
   }
 
-  .logo {
+body {
+  font-size: 1.5rem;
+}
+
+.logo {
     font-size: 6rem;
     text-transform: none;
   }
-
-  .flex-box {
+.flex-box {
     width: 100%;
     min-width: 0;
+    min-height: 45rem;
   }
   .flex-container {
     flex-flow: column wrap;
