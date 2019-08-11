@@ -14,8 +14,8 @@ h1 {
   color: #666666;
   font-size: 3rem;
   font-family: 'Literata', serif;
-  margin: 2rem 2% 0rem;
-  padding: 0rem;
+  margin: 0 2% 0;
+  padding: 1rem 0rem 0rem;
 }
 
 article {
@@ -122,7 +122,7 @@ a:hover {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
 }
 
@@ -364,7 +364,7 @@ nav img {
   }
 
 nav {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 3.5rem 2rem .5rem 2rem;
     line-height: 3rem;
@@ -387,24 +387,24 @@ nav {
   }
 
   article {
-  margin: 0rem 0.5rem 0rem;
+  margin: 0rem 1rem 0rem;
   }
 
-  h1 {
-    margin: 2rem 0.5rem 0rem;
+h1 {
+    margin: 2rem 1rem 0rem;
   }
 
 body {
-  font-size: 200%;
+  font-size: 225%;
 }
 
 h3 {
-  font-size: 150%;
+  font-size: 175%;
 }
 
 .logo {
-    font-size: 5rem;
-    line-height: 4rem;
+    font-size: 8rem;
+    line-height: 8rem;
     text-transform: none;
   }
 
@@ -413,7 +413,7 @@ h3 {
     min-width: 0;
     min-height: 60rem;
     padding: 0rem 3rem 3rem;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 0rem 2rem;
   }
   .flex-container {
     flex-flow: column wrap;
