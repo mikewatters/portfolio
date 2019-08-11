@@ -14,13 +14,12 @@ h1 {
   color: #666666;
   font-size: 3rem;
   font-family: 'Literata', serif;
-  margin: 2rem 4rem 0rem;
+  margin: 2rem 2% 0rem;
   padding: 0rem;
 }
 
 article {
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin: 0 2% 0;
 }
 
 h2 {
@@ -41,31 +40,29 @@ h3 i {
 }
 
 nav {
-  font-family: 'Literata', serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 2rem;
-  text-transform: uppercase;
+  letter-spacing: 4px;
   color: white;
   text-decoration: none;
   font-weight: 900;
-  padding: 2rem 4rem 2rem 4rem;
-  margin: 0rem;
+  padding: 4rem 4rem 2rem 4rem;
+  margin: 1rem 0rem 1rem;
   background-color: #d65076;
+  border-radius: 20px;
 }
 
 nav a:link {
-  font-family: 'Literata', serif;
   color: white;
   text-decoration: none;
 }
 
 nav a:visited {
-  font-family: 'Literata', serif;
   color: white;
   text-decoration: none;
 }
 
 nav a:hover {
-  font-family: 'Literata', serif;
   color: #444444;
   text-decoration: none;
 }
@@ -130,12 +127,13 @@ a:hover {
 }
 
 .flex-box {
-  width: 30%;
+  width: 31%;
   min-height: 30rem;
   padding: 0rem 2rem 2rem;
   margin: .5rem;
   box-sizing: border-box;
   transition: background-color 2s ease-out;
+  border-radius: 20px;
 }
 
 .flex-box:nth-child(6n+1) {
@@ -166,11 +164,12 @@ footer {
   background-color: #666666;
   padding: 2rem 4rem 2rem 2rem;
   margin-top: 2rem;
+  border-radius: 20px;
 }
 
 .footer-text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   text-align: right;
@@ -273,7 +272,7 @@ fieldset input {
 }
 
 .checkbox label:hover input ~ .checkmark {
-  background-color: #d9e3da;
+  background-color: #d65076;
 }
 
 .checkbox input:checked ~ .checkmark {
@@ -359,9 +358,6 @@ fieldset input {
   background: white;
 }
 
-@media screen and (min-width: 1280px) {
-}
-
 @media screen and (max-width: 1024px) {
 nav img {
       display: none;
@@ -369,28 +365,37 @@ nav img {
 
 nav {
     font-size: 3rem;
+    text-align: center;
+    padding: 3.5rem 2rem .5rem 2rem;
+    line-height: 3rem;
+    letter-spacing: 2px;
   }
 
   nav a:link {
-    font-family: 'Literata', serif;
     color: white;
     text-decoration: none;
   }
 
   nav a:visited {
-    font-family: 'Literata', serif;
     color: white;
     text-decoration: none;
   }
 
   nav a:hover {
-    font-family: 'Literata', serif;
     color: #444444;
     text-decoration: none;
   }
 
+  article {
+  margin: 0rem 0.5rem 0rem;
+  }
+
+  h1 {
+    margin: 2rem 0.5rem 0rem;
+  }
+
 body {
-  font-size: 250%;
+  font-size: 200%;
 }
 
 h3 {
@@ -398,20 +403,20 @@ h3 {
 }
 
 .logo {
-    font-size: 6rem;
+    font-size: 5rem;
+    line-height: 4rem;
     text-transform: none;
   }
+
 .flex-box {
     width: 100%;
     min-width: 0;
-    min-height: 50rem;
-    padding: 0rem 4rem 4rem;
+    min-height: 60rem;
+    padding: 0rem 3rem 3rem;
+    margin: 2rem 0rem 2rem 0rem;
   }
   .flex-container {
     flex-flow: column wrap;
-  }
-  .footer-text {
-    font-size: 150%;
   }
   .rodeo {
     height: 50px;
@@ -443,5 +448,13 @@ h3 {
 }
 .checkbox label {
       padding-left: 64px;
+}
+footer {
+  padding: 1rem 1rem 1rem -1rem;
+  border-radius: 20px;
+}
+.footer-text {
+  font-size: 3.5rem;
+  text-align: center;
 }
 }
