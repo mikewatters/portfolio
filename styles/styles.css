@@ -205,6 +205,9 @@ input {
   width: 100%;
   border-radius: 15px;
   border: 1px solid #dddddd;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type="submit"] {
@@ -250,7 +253,7 @@ fieldset input {
 .checkbox label {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 32px;
   margin-top: 12px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -265,21 +268,25 @@ fieldset input {
   left: 0;
   height: 25px;
   width: 25px;
-  border-radius: 20px;
+  border-radius: 50%;
   background-color: #d1cfc0;
 }
 
 .checkbox label:hover input ~ .checkmark {
-  background-color: #d65076;
+  background-color: #d9e3da;
 }
 
 .checkbox input:checked ~ .checkmark {
   background-color: #d65076;
 }
 
+.chexbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
 .checkmark:after {
   content: "";
-  position: absolute;
+  position: relative;
   display: block;
 }
 
@@ -306,7 +313,7 @@ fieldset input {
 .radio label {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 0px;
   margin-top: 12px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -326,7 +333,7 @@ fieldset input {
 }
 
 .radio:hover input ~ .rodeo {
-  background-color: #444;
+  background-color: #d9e3da;
 }
 
 .radio input:checked ~ .rodeo {
@@ -397,7 +404,8 @@ h3 {
 .flex-box {
     width: 100%;
     min-width: 0;
-    min-height: 45rem;
+    min-height: 50rem;
+    padding: 0rem 4rem 4rem;
   }
   .flex-container {
     flex-flow: column wrap;
@@ -405,4 +413,35 @@ h3 {
   .footer-text {
     font-size: 150%;
   }
+  .rodeo {
+    height: 50px;
+    width: 50px;
+  }
+  .radio .rodeo:after {
+    top: 18px;
+    left: 19px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+  }
+
+.radio label {
+        padding-left: 32px;
+  }
+
+.checkmark {
+  height: 50px;
+  width: 50px;
+}
+
+.checkbox .checkmark:after {
+    left: 18px;
+    top: 10px;
+    width: 10px;
+    height: 20px;
+}
+.checkbox label {
+      padding-left: 64px;
+}
 }
