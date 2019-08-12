@@ -124,7 +124,7 @@ a:hover {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -424,7 +424,7 @@ h3 {
 .flex-box {
     width: 100%;
     min-width: 0;
-    min-height: 50rem;
+    min-height: 60rem;
     padding: 0rem 3rem 3rem;
     margin: 2rem 0rem 2rem;
   }
@@ -503,15 +503,17 @@ h3 {
   font-size: 150%;
 }
 
+.flex-container {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
 .flex-box {
     width: 47%;
     min-width: 0;
-    min-height: 25rem;
+    min-height: 30rem;
     padding: 0rem 3rem 3rem;
     margin: 0.5rem 1rem 0.5rem 0rem;
-  }
-  .flex-container {
-    flex-flow: row wrap;
   }
   .rodeo {
     height: 30px;
