@@ -282,12 +282,11 @@ fieldset input {
   background-color: #d65076;
 }
 
+.checkbox input:not(:checked) {
+    background-color: #d1cfc0;
+}
 .chexbox input:checked ~ .checkmark:after {
   display: block;
-}
-
-.chexbox input:empty ~ .checkmark:after {
-  background-color: #d1cfc0;
 }
 
 .checkmark:after {
