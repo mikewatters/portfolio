@@ -75,6 +75,7 @@ nav img {
   float: right;
   height: 280px;
   width: 200px;
+  border-radius: 20px;
 
 -webkit-transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
@@ -361,13 +362,18 @@ fieldset input {
 
 @media screen and (max-width: 1024px) {
 nav img {
-      display: none;
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin: -6rem 25% 10%;
+
   }
 
 nav {
     font-size: 3rem;
     text-align: center;
-    padding: 6rem 2rem 1rem 2rem;
+    margin-top: 6rem;
+    padding: 2rem 2rem 1rem 2rem;
     line-height: 3rem;
     letter-spacing: 2px;
   }
