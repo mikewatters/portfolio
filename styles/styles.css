@@ -205,7 +205,8 @@ button, input, select, textarea {
 input {
   width: 100%;
   border-radius: 15px;
-  border: 1px solid #dddddd;
+  border: 1px
+  solid #aaa;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -214,7 +215,7 @@ input {
 input[type="submit"] {
   width: 33%;
   background-color: #d65076;
-  color: #ffffff;
+  color: #fff;
 }
 
 input:focus {
@@ -223,8 +224,8 @@ input:focus {
 }
 
 textarea {
-  color: #dddddd;
-  border: 1px solid #dddddd;
+  color: #aaa;
+  border: 1px solid #aaa;
     border-radius: 20px;
     width: 100%;
 }
@@ -283,6 +284,10 @@ fieldset input {
 
 .chexbox input:checked ~ .checkmark:after {
   display: block;
+}
+
+.chexbox input:empty ~ .checkmark:after {
+  background-color: #d1cfc0;
 }
 
 .checkmark:after {
