@@ -360,7 +360,7 @@ fieldset input {
   background: white;
 }
 
-@media screen and (min-width:300px) and (max-width: 992px) {
+@media screen and (min-width:300px) and (max-width: 768px) {
 nav img {
     float: left;
     width: 40%;
@@ -473,7 +473,7 @@ footer {
 }
 }
 
-@media screen and (min-width:993px) and (max-width: 1280px) {
+@media screen and (min-width:769px) and (max-width: 1280px) {
 nav img {
     float: right;
     width: 25%;
