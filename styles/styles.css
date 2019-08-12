@@ -198,7 +198,7 @@ button, input, select, textarea {
   font-size: 100%;
   box-sizing: border-box;
   display: block;
-  margin: 1rem 0rem 1rem;
+  margin: 2rem 0rem 3rem;
   padding: 1rem;
 }
 
@@ -238,6 +238,7 @@ textarea:focus {
 
 fieldset {
   border: none;
+  padding: 0rem 0rem 3rem;
 }
 
 fieldset input {
