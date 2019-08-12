@@ -255,7 +255,7 @@ fieldset input {
 .checkbox label {
   display: block;
   position: relative;
-  padding-left: 32px;
+  padding-left: 36px;
   margin-top: 12px;
   cursor: pointer;
   -webkit-user-select: none;
@@ -275,18 +275,11 @@ fieldset input {
 }
 
 .checkbox label:hover input ~ .checkmark {
-  background-color: #d9e3da;
+  background-color: #d65076;
 }
 
 .checkbox input:checked ~ .checkmark {
   background-color: #d65076;
-}
-
-.checkbox input:not(:checked) ~ .checkmark {
-    background-color: #d1cfc0;
-}
-.chexbox input:checked ~ .checkmark:after {
-  display: block;
 }
 
 .checkmark:after {
@@ -318,7 +311,7 @@ fieldset input {
 .radio label {
   display: block;
   position: relative;
-  padding-left: 0px;
+  padding-left: 4px;
   margin-top: 12px;
   cursor: pointer;
   -webkit-user-select: none;
