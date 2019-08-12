@@ -275,14 +275,14 @@ fieldset input {
 }
 
 .checkbox label:hover input ~ .checkmark {
-  background-color: #d65076;
+  background-color: #d9e3da;
 }
 
 .checkbox input:checked ~ .checkmark {
   background-color: #d65076;
 }
 
-.checkbox input:not(:checked) {
+.checkbox input:not(:checked) ~ .checkmark {
     background-color: #d1cfc0;
 }
 .chexbox input:checked ~ .checkmark:after {
