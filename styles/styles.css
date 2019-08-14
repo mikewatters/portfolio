@@ -361,18 +361,16 @@ fieldset input {
 @media screen and (min-width:300px) and (max-width: 992px) {
 nav img {
     float: left;
-    width: 40%;
-    height: 40%;
-    margin: -6rem 30% 10%;
-
+    width: 20%;
+    height: 20%;
+    margin: -1rem 2rem -1rem -1rem;
   }
 
 nav {
     font-size: 3rem;
-    text-align: center;
-    margin-top: 6rem;
-    padding: 2rem 2rem 1rem 2rem;
+    text-align: left;
     line-height: 3rem;
+    vertical-align: middle;
     letter-spacing: 2px;
   }
 
@@ -393,7 +391,7 @@ nav {
 
 .logo {
       font-size: 6rem;
-      line-height: 6rem;
+      line-height: 5rem;
     }
 
 article {
@@ -476,7 +474,6 @@ nav img {
     float: right;
     width: 25%;
     height: 25%;
-
   }
 
 article {
