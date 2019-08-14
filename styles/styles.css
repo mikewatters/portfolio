@@ -70,7 +70,7 @@ nav a:hover {
 nav img {
   border: solid 1px #ffffff;
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin: -1.5rem -1rem 0rem 2rem;
   overflow: hidden;
   float: right;
   height: 280px;
@@ -124,7 +124,7 @@ a:hover {
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -360,16 +360,16 @@ fieldset input {
 
 @media screen and (min-width:300px) and (max-width: 992px) {
 nav img {
-    float: left;
-    width: 20%;
-    height: 20%;
-    margin: -1rem 2rem -1rem -1rem;
+    float: right;
+    height: 224px;
+    width: 160px;
+    margin: -2rem -2rem 1rem 1rem;
   }
 
 nav {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
-    line-height: 3rem;
+    line-height: 1rem;
     vertical-align: middle;
     letter-spacing: 2px;
   }
@@ -390,8 +390,8 @@ nav {
   }
 
 .logo {
-      font-size: 6rem;
-      line-height: 5rem;
+      font-size: 4rem;
+      line-height: 3.5rem;
     }
 
 article {
@@ -472,8 +472,8 @@ footer {
 @media screen and (min-width:993px) and (max-width: 1280px) {
 nav img {
     float: right;
-    width: 25%;
-    height: 25%;
+    width: 200px;
+    height: 280px;
   }
 
 article {
